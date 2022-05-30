@@ -1,9 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <Container>
+        Navbar
+    </Container>
   )
 }
 
 export default Navbar
+
+const Container = styled.div`
+    
+`;
