@@ -13,7 +13,9 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          Center
+          <Logo>
+            Alteza
+          </Logo>
         </Center>
         <Right>
           Right
@@ -64,6 +66,14 @@ const Center = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
+`;
+
+const Logo = styled.div`
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: cursive;
+  color: white;
 `;
 
 const Right = styled.div`
