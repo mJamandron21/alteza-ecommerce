@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import Badge from '@mui/material/Badge';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Navbar = () => {
   return (
@@ -8,8 +10,8 @@ const Navbar = () => {
       <Wrapper >
         <Left>
           <SearchContainer>
-            <SearchOutlinedIcon />
             <Input/>
+            <SearchOutlinedIcon />
           </SearchContainer>
         </Left>
         <Center>
@@ -18,7 +20,13 @@ const Navbar = () => {
           </Logo>
         </Center>
         <Right>
-          Right
+          <MenuItem>Sign Up</MenuItem>
+          <MenuItem>Login</MenuItem>
+          <MenuItem>
+          <Badge badgeContent={4} color="primary">
+             <ShoppingCartOutlinedIcon color="white" />
+           </Badge>
+          </MenuItem>
         </Right>
       </Wrapper>
     </Container>
@@ -33,7 +41,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: 0.8rem 2rem;
+  padding: 0.5rem 2rem;
   display: flex ;
   justify-content: space-between;
 `;
@@ -80,4 +88,12 @@ const Right = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: end;
+`;
+
+const MenuItem = styled.div`
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0.8rem;
+  color: white;
 `;
