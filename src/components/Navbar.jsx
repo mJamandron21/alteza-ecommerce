@@ -48,6 +48,7 @@ const Input = styled.input`
   background-color: transparent;
   outline: none;
   color: white;
+  font-size: 1rem;
 `; 
 
 const SearchContainer = styled.div`
