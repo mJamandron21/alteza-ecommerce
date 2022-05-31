@@ -29,7 +29,7 @@ export default Navbar
 
 const Container = styled.div`
   height: 4rem;
-  background-color: #DEA886;
+  background-color: #b47f5e;
 `;
 
 const Wrapper = styled.div`
@@ -71,7 +71,7 @@ const Center = styled.div`
 
 const Logo = styled.div`
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: cursive;
   color: white;
 `;
