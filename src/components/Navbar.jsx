@@ -37,7 +37,7 @@ export default Navbar
 
 const Container = styled.div`
   height: 4rem;
-  background-color: #b47f5e;
+  background-color: white;
 `;
 
 const Wrapper = styled.div`
@@ -54,16 +54,16 @@ const Left = styled.div`
 
 const Input = styled.input`
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   background-color: transparent;
   outline: none;
-  color: white;
+  color: black;
   font-size: 1rem;
 `; 
 
 const SearchContainer = styled.div`
  border: none;
- color: white;
+ color: black;
  display: flex;
  align-items: center;
  margin-left: 1rem;
@@ -81,7 +81,7 @@ const Logo = styled.div`
   font-weight: bold;
   font-size: 2rem;
   font-family: cursive;
-  color: white;
+  color: black;
 `;
 
 const Right = styled.div`
@@ -95,5 +95,5 @@ const MenuItem = styled.div`
   font-size: 1rem;
   cursor: pointer;
   margin: 0.8rem;
-  color: white;
+  color: black;
 `;
