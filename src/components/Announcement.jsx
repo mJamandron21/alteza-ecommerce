@@ -15,5 +15,7 @@ const Container = styled.div`
   height: 30px;
   background-color:#908660; 
   color: white;
+  display: flex;
   text-align: center;
+  justify-content: center;
 `;
