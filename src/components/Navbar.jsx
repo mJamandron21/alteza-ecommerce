@@ -20,8 +20,8 @@ const Navbar = () => {
           </Logo>
         </Center>
         <Right>
-          <MenuItem>Sign Up</MenuItem>
-          <MenuItem>Login</MenuItem>
+          <MenuItem>SIGN UP</MenuItem>
+          <MenuItem>LOGIN</MenuItem>
           <MenuItem>
           <Badge badgeContent={4} color="primary">
              <ShoppingCartOutlinedIcon color="white" />
