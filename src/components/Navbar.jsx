@@ -81,6 +81,7 @@ const Logo = styled.div`
   font-weight: bold;
   font-size: 2rem;
   font-family: cursive;
+  background-color: white;
   color: black;
   position: absolute;
   padding-top: 3rem;
