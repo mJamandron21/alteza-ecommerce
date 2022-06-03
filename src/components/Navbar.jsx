@@ -82,6 +82,12 @@ const Logo = styled.div`
   font-size: 2rem;
   font-family: cursive;
   color: black;
+  position: absolute;
+  padding-top: 3rem;
+  img{
+    width: 6rem;
+    height: 6rem;
+  }
 `;
 
 const Right = styled.div`
