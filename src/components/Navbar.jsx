@@ -87,6 +87,7 @@ const Logo = styled.div`
   padding-top: 3.5rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  z-index: 1;
   img{
     width: 6rem;
     height: 6rem;
