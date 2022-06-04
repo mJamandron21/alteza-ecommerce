@@ -22,6 +22,8 @@ const Container = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
+    background-color: aliceblue;
+    position: relative;
 `;
 
 const Arrow = styled.div`
@@ -29,4 +31,13 @@ const Arrow = styled.div`
     height: 50px;
     background-color: #fff7ff;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    
+    margin: auto;
 `;
