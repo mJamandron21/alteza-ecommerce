@@ -84,7 +84,9 @@ const Logo = styled.div`
   background-color: white;
   color: black;
   position: absolute;
-  padding-top: 3rem;
+  padding-top: 3.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   img{
     width: 6rem;
     height: 6rem;
