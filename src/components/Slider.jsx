@@ -2,6 +2,9 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material'
 import React from 'react'
 import styled from 'styled-components'
 import slider1 from '../images/slider-1.png';
+import slider2 from '../images/slider-2.png';
+import slider3 from '../images/slider-3.png';
+
 
 const Slider = () => {
   return (
@@ -20,6 +23,26 @@ const Slider = () => {
                     <Button>SHOP NOW!</Button>
                 </InfoContainer>
             </Slide>
+            <Slide>
+                <ImageContainer>
+                    <Image src={slider2} alt='slider-2' />
+                </ImageContainer>
+                <InfoContainer>
+                    <Title>WILD YET CLASSY!</Title>
+                    <Description>READY FOR ADVENTURE! GET 20% OFF FOR WILD WEST INSPIRED OUTFIT.</Description>
+                    <Button>SHOP NOW!</Button>
+                </InfoContainer>
+            </Slide>
+            <Slide>
+                <ImageContainer>
+                    <Image src={slider3} alt='slider-3' />
+                </ImageContainer>
+                <InfoContainer>
+                    <Title>FEEL THE COMFORT!</Title>
+                    <Description>BEAT THE NORMS! GET 30% OFF FOR NEW SUMMER OUTFIT.</Description>
+                    <Button>SHOP NOW!</Button>
+                </InfoContainer>
+            </Slide>
         </Wrapper>
         <Arrow direction="right">
             <ArrowRightOutlined />
@@ -35,8 +58,8 @@ const Container = styled.div`
     width: 100%;
     height: 95vh;
     display: flex;
-    /* background-color: #feebc9; */
     position: relative;
+    /* overflow: hidden; */
 `;
 
 const Arrow = styled.div`
@@ -59,14 +82,14 @@ const Arrow = styled.div`
 
 const Wrapper = styled.div`
     height: 100%;
+    display: flex;
 `;
 
 const Slide = styled.div`
-    width: 100%;
+    width: 100vw;
     height: 95vh;
     display: flex;
     align-items: center;
-    /* background-color: black; */
 `;
 
 const ImageContainer = styled.div`
