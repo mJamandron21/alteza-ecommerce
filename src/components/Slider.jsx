@@ -6,7 +6,11 @@ import { sliderItems } from '../data';
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
     const handleClick = (direction) => {
-
+        if (direction === "left"){
+            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+        }else {
+            setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+        }
     };
 
   return (
@@ -14,7 +18,7 @@ const Slider = () => {
         <Arrow direction="left" onClick={() =>handleClick("left")}>
             <ArrowLeftOutlined />
         </Arrow>
-        <Wrapper>
+        <Wrapper slideIndex={slideIndex} >
             {sliderItems.map((item)=> (
                 <Slide bg={item.bg}>
                     <ImageContainer>
@@ -41,10 +45,10 @@ export default Slider
 
 const Container = styled.div`
     width: 100%;
-    height: 95vh;
+    height: 90vh;
     display: inline-flex;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 `;
 
 const Arrow = styled.div`
@@ -69,12 +73,12 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
     height: 100%;
     display: flex;
-    transform: translateX(0vw);
+    transform: translateX(${(props)=>props.slideIndex * -100}vw);
 `;
 
 const Slide = styled.div`
     width: 100vw;
-    height: 95vh;
+    height: 94vh;
     display: flex;
     align-items: center;
     background-color: ${props=> props.bg};
