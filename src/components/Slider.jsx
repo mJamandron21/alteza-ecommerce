@@ -1,50 +1,35 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material'
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import slider1 from '../images/slider-1.png';
-import slider2 from '../images/slider-2.png';
-import slider3 from '../images/slider-3.png';
-
+import { sliderItems } from '../data';
 
 const Slider = () => {
+    const [slideIndex, setSlideIndex] = useState(0);
+    const handleClick = (direction) => {
+
+    };
+
   return (
     <Container>
-        <Arrow direction="left">
+        <Arrow direction="left" onClick={() =>handleClick("left")}>
             <ArrowLeftOutlined />
         </Arrow>
         <Wrapper>
-            <Slide>
-                <ImageContainer>
-                    <Image src={slider1} alt='slider-1' />
-                </ImageContainer>
-                <InfoContainer>
-                    <Title>SET THE TREND!</Title>
-                    <Description>BE YOURSELF! GET 30% OFF FOR NEW KOREAN INSPIRED OUTFIT.</Description>
-                    <Button>SHOP NOW!</Button>
-                </InfoContainer>
-            </Slide>
-            <Slide>
-                <ImageContainer>
-                    <Image src={slider2} alt='slider-2' />
-                </ImageContainer>
-                <InfoContainer>
-                    <Title>WILD YET CLASSY!</Title>
-                    <Description>READY FOR ADVENTURE! GET 20% OFF FOR WILD WEST INSPIRED OUTFIT.</Description>
-                    <Button>SHOP NOW!</Button>
-                </InfoContainer>
-            </Slide>
-            <Slide>
-                <ImageContainer>
-                    <Image src={slider3} alt='slider-3' />
-                </ImageContainer>
-                <InfoContainer>
-                    <Title>FEEL THE COMFORT!</Title>
-                    <Description>BEAT THE NORMS! GET 30% OFF FOR NEW SUMMER OUTFIT.</Description>
-                    <Button>SHOP NOW!</Button>
-                </InfoContainer>
-            </Slide>
+            {sliderItems.map((item)=> (
+                <Slide>
+                    <ImageContainer>
+                        {/* <Image src={`../images/${item.img}`} alt='slider-img' /> */}
+                        <Image src={item.img} alt='slider-img' />
+                    </ImageContainer>
+                    <InfoContainer>
+                        <Title>{item.title}</Title>
+                        <Description>{item.description}</Description>
+                        <Button>SHOP NOW!</Button>
+                    </InfoContainer>
+                </Slide>
+            ))}
         </Wrapper>
-        <Arrow direction="right">
+        <Arrow direction="right" onClick={() =>handleClick("right")}>
             <ArrowRightOutlined />
         </Arrow>
 
@@ -59,7 +44,8 @@ const Container = styled.div`
     height: 95vh;
     display: flex;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
+    background-color: #F7F7F7;
 `;
 
 const Arrow = styled.div`
@@ -78,11 +64,13 @@ const Arrow = styled.div`
     margin: auto;
     cursor: pointer;
     opacity: 0.5;
+    z-index: 2;
 `;
 
 const Wrapper = styled.div`
     height: 100%;
     display: flex;
+    transform: translateX(0vw);
 `;
 
 const Slide = styled.div`
