@@ -92,8 +92,10 @@ const ImageContainer = styled.div`
 `;
 
 const Image = styled.img`
+    width: fit-content;
     height: 100%;
     padding: 0 6rem;
+    /* margin-top: 2rem; */
 `;
 
 const InfoContainer = styled.div`

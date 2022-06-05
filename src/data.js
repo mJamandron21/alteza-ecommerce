@@ -13,16 +13,17 @@ export const sliderItems = [
     },
     {
         id: 2,
-        img: "https://www.kindpng.com/picc/m/231-2311448_sexy-selena-gomez-in-short-clothes-png-image.png",
-        title: "WILD YET CLASSY!",
-        description: "READY FOR ADVENTURE! GET 20% OFF FOR WILD WEST INSPIRED OUTFIT.",
-        bg: "#F7F7F7"
-    },
-    {
-        id: 3,
         img: "https://www.kindpng.com/picc/m/415-4155115_korean-dress-transparent-background-png-download-bae-suzy.png",
         title: "FEEL THE COMFORT!",
         description: "BEAT THE NORMS! GET 30% OFF FOR NEW SUMMER OUTFIT.",
+        bg: "#F7F7F7"
+        
+    },
+    {
+        id: 3,
+        img: "https://www.kindpng.com/picc/m/231-2311448_sexy-selena-gomez-in-short-clothes-png-image.png",
+        title: "WILD YET CLASSY!",
+        description: "READY FOR ADVENTURE! GET 20% OFF FOR WILD WEST INSPIRED OUTFIT.",
         bg: "#F7F7F7"
     },
 ]
