@@ -16,7 +16,7 @@ const Slider = () => {
         </Arrow>
         <Wrapper>
             {sliderItems.map((item)=> (
-                <Slide>
+                <Slide bg={item.bg}>
                     <ImageContainer>
                         {/* <Image src={`../images/${item.img}`} alt='slider-img' /> */}
                         <Image src={item.img} alt='slider-img' />
@@ -42,10 +42,9 @@ export default Slider
 const Container = styled.div`
     width: 100%;
     height: 95vh;
-    display: flex;
+    display: inline-flex;
     position: relative;
-    overflow: hidden;
-    background-color: #F7F7F7;
+    /* overflow: hidden; */
 `;
 
 const Arrow = styled.div`
@@ -78,6 +77,7 @@ const Slide = styled.div`
     height: 95vh;
     display: flex;
     align-items: center;
+    background-color: ${props=> props.bg};
 `;
 
 const ImageContainer = styled.div`
@@ -88,8 +88,8 @@ const ImageContainer = styled.div`
 `;
 
 const Image = styled.img`
-    height: 90%;
-    padding: 2.8rem 6rem;
+    height: 100%;
+    padding: 0 6rem;
 `;
 
 const InfoContainer = styled.div`
