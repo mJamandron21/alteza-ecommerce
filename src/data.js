@@ -16,8 +16,7 @@ export const sliderItems = [
         img: "https://www.kindpng.com/picc/m/415-4155115_korean-dress-transparent-background-png-download-bae-suzy.png",
         title: "FEEL THE COMFORT!",
         description: "BEAT THE NORMS! GET 30% OFF FOR NEW SUMMER OUTFIT.",
-        bg: "#F7F7F7"
-        
+        bg: "#F7F7F7"  
     },
     {
         id: 3,
