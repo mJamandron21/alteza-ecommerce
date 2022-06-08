@@ -126,4 +126,9 @@ const Button = styled.button`
     font-size: 1rem;
     background: transparent;
     cursor: pointer;
+    &:hover{
+        background-color: #000000;
+        color: white;
+        transition: all 0.5s ease-in-out;
+    }
 `;
