@@ -37,7 +37,7 @@ const Navbar = () => {
 export default Navbar
 
 const Container = styled.div`
-  height: 4rem;
+  height: 4.5rem;
   background-color: white;
 `;
 
@@ -45,6 +45,7 @@ const Wrapper = styled.div`
   padding: 0.5rem 2rem;
   display: flex ;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const Left = styled.div`
