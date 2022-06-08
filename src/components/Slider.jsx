@@ -45,7 +45,7 @@ export default Slider
 
 const Container = styled.div`
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     display: inline-flex;
     position: relative;
     overflow: hidden;
