@@ -68,6 +68,9 @@ const Arrow = styled.div`
     cursor: pointer;
     opacity: 0.5;
     z-index: 2;
+    &:hover{
+        background-color: #555555;
+    }
 `;
 
 const Wrapper = styled.div`
