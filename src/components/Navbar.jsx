@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import Tooltip from '@mui/material/Tooltip';
 import PageviewIcon from '@mui/icons-material/Pageview';
 import Badge from '@mui/material/Badge';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
@@ -28,20 +29,28 @@ const Navbar = () => {
           <MenuItem>SIGN UP</MenuItem>
           <MenuItem>LOGIN</MenuItem>
           <MenuItem>
-          <Badge badgeContent={4} fontSize='small' color="primary">
-             <ShoppingCartOutlinedIcon fontSize='medium' color="white" />
-           </Badge>
+            <Tooltip title="Cart" arrow>
+              <Badge badgeContent={4} fontSize='small' color="primary">
+                <ShoppingCartOutlinedIcon fontSize='medium' color="white" />
+              </Badge>
+            </Tooltip>
           </MenuItem>
           <MenuItem>
-          <Badge badgeContent={2} fontSize='small' color="primary">
-             <FavoriteBorderOutlinedIcon fontSize='medium' color="white" />
-           </Badge>
+            <Tooltip title="Wishlist" arrow>
+              <Badge badgeContent={2} fontSize='small' color="primary">
+                <FavoriteBorderOutlinedIcon fontSize='medium' color="white" />
+              </Badge>
+            </Tooltip>
           </MenuItem>
           <MenuItem>
-            <SupportAgentOutlinedIcon fontSize='medium' />
+            <Tooltip title="Customer Support" arrow>
+              <SupportAgentOutlinedIcon fontSize='medium' />
+            </Tooltip>
           </MenuItem>
           <MenuItem>
-            <LanguageOutlinedIcon fontSize='medium'/>
+            <Tooltip title="Language" arrow>
+              <LanguageOutlinedIcon fontSize='medium'/>
+            </Tooltip>
           </MenuItem>
         </Right>
       </Wrapper>
