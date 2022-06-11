@@ -2,7 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import Badge from '@mui/material/Badge';
+import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
+import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import logo from '../images/alteza-logo.png';
 
 const Navbar = () => {
@@ -24,9 +27,20 @@ const Navbar = () => {
           <MenuItem>SIGN UP</MenuItem>
           <MenuItem>LOGIN</MenuItem>
           <MenuItem>
-          <Badge badgeContent={4} color="primary">
-             <ShoppingCartOutlinedIcon color="white" />
+          <Badge badgeContent={4} fontSize='small' color="primary">
+             <ShoppingCartOutlinedIcon fontSize='medium' color="white" />
            </Badge>
+          </MenuItem>
+          <MenuItem>
+          <Badge badgeContent={2} fontSize='small' color="primary">
+             <FavoriteBorderOutlinedIcon fontSize='medium' color="white" />
+           </Badge>
+          </MenuItem>
+          <MenuItem>
+            <SupportAgentOutlinedIcon fontSize='medium' />
+          </MenuItem>
+          <MenuItem>
+            <LanguageOutlinedIcon fontSize='medium'/>
           </MenuItem>
         </Right>
       </Wrapper>
