@@ -26,3 +26,26 @@ export const sliderItems = [
         bg: "#F7F7F7"
     },
 ]
+
+export const categories = [
+    {
+        id: 1,
+        img: "https://www.pexels.com/photo/woman-wearing-blue-denim-jacket-2901680/",
+        title: "JACKETS 'ol HOODIES"
+    },
+    {
+        id: 2,
+        img: "https://www.pexels.com/photo/woman-wearing-shades-while-kneeling-near-wooden-door-3672825/",
+        title: "COOL STREETWEARS"
+    },
+    {
+        id: 3,
+        img: "https://www.pexels.com/photo/woman-standing-bear-tall-grass-852860/",
+        title: "SUMMER VIBES"
+    },
+    {
+        id: 4,
+        img: "https://www.pexels.com/photo/smiling-woman-in-red-and-white-polka-dot-dress-3118650/",
+        title: "STYLISH DRESSES"
+    }
+]
