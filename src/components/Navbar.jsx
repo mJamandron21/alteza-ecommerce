@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import PageviewIcon from '@mui/icons-material/Pageview';
 import Badge from '@mui/material/Badge';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
@@ -15,7 +16,7 @@ const Navbar = () => {
         <Left>
           <SearchContainer>
             <Input/>
-            <SearchOutlinedIcon />
+            <PageviewIcon fontSize='large'/>
           </SearchContainer>
         </Left>
         <Center>
