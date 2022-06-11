@@ -47,5 +47,10 @@ export const categories = [
         id: 4,
         img: "https://www.pexels.com/photo/smiling-woman-in-red-and-white-polka-dot-dress-3118650/",
         title: "STYLISH DRESSES"
+    },
+    {
+        id: 5,
+        img: "https://www.pexels.com/photo/a-side-view-of-a-woman-jogging-on-the-street-5310782/",
+        title: "SPORTY BABES"
     }
 ]
