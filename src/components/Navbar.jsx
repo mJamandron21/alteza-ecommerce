@@ -16,7 +16,7 @@ const Navbar = () => {
       <Wrapper >
         <Left>
           <SearchContainer>
-            <Input/>
+            <Input type='text' placeholder='Search here'/>
             <PageviewIcon fontSize='large'/>
           </SearchContainer>
         </Left>
@@ -85,6 +85,9 @@ const Input = styled.input`
   outline: none;
   color: black;
   font-size: 1rem;
+  ::placeholder{
+    font-size: 0.8rem;
+  }
 `; 
 
 const SearchContainer = styled.div`
