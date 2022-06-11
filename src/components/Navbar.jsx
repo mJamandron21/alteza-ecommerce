@@ -84,7 +84,7 @@ const Input = styled.input`
   background-color: transparent;
   outline: none;
   color: black;
-  font-size: 1rem;
+  font-size: 0.8rem;
   ::placeholder{
     font-size: 0.8rem;
   }
