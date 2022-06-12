@@ -1,8 +1,16 @@
 import React from 'react'
+import { styled } from '@material-ui/core';
+import { categories } from '../data';
+import CategoryItem from './CategoryItem';
 
 const Categories = () => {
   return (
-    <div>Categories</div>
+    <Container>
+      {categories.map(item=>(
+        <CategoryItem item={item} />
+      ))}
+
+    </Container>
   )
 }
 
