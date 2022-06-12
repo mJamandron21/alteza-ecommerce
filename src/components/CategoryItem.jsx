@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const CategoryItem = () => {
+const CategoryItem = ({item}) => {
   return (
     <Container>
-      
+      hello
     </Container>
   )
 }
@@ -12,5 +12,5 @@ const CategoryItem = () => {
 export default CategoryItem
 
 const Container = styled.div`
-  
+
 `;

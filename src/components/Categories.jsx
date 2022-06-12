@@ -15,3 +15,8 @@ const Categories = () => {
 }
 
 export default Categories
+
+const Container = styled.div`
+  display: flex;
+  padding: 20px;
+`;
