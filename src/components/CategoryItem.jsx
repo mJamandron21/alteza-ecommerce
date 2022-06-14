@@ -51,7 +51,7 @@ const Button = styled.button`
   background-color: black;
   color: white;
   font-size: large;
-  font-weight: bold;
+  font-weight: 400;
   padding: 10px;
   cursor: pointer;
     &:hover{
