@@ -44,11 +44,13 @@ const Slider = () => {
 export default Slider
 
 const Container = styled.div`
-    width: 100%;
+    width: 96%;
     height: 92vh;
     display: inline-flex;
     position: relative;
     overflow: hidden;
+    border-radius: 50px;
+    margin-left: 30px;
 `;
 
 const Arrow = styled.div`
@@ -104,7 +106,7 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
     flex: 1;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     /* background-color: aliceblue; */
 `;
 
