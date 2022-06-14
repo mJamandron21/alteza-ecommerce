@@ -41,17 +41,17 @@ export const categories = [
     },
     {
         id: 3,
-        img: "https://img.freepik.com/free-photo/attractive-casual-blond-girl-hat-dreamily-looking-away-while-walking-with-classic-bicycle-city-street_574295-4130.jpg?t=st=1655225513~exp=1655226113~hmac=640b29b9bafbccedb065e1145761d9655a9284177a12a39b2f206e1a7dea80e8&w=740",
-        title: "COOL STREETWEARS"
-    },
-    {
-        id: 4,
-        img: "https://img.freepik.com/free-photo/stylish-tanned-girl-black-dress-red-neckerchief-posing-near-iron-lamppost_197531-3245.jpg?t=st=1655225748~exp=1655226348~hmac=9993addfa5baf1444e9aef1db5fcabed82987cd6271498ea6724421ecb7b17e2&w=740",
-        title: "STYLISH DRESSES"
-    },
-    {
-        id: 5,
         img: "https://img.freepik.com/free-photo/woman-lifting-dumbbells-gym_1303-31868.jpg?t=st=1655225340~exp=1655225940~hmac=eb6c45e00553cc4a6f7bc65e8fa04528fbbf2354b2970216af6fdc4d2ad54664&w=740",
         title: "SPORTY BABES"
     }
+    // {
+    //     id: 3,
+    //     img: "https://img.freepik.com/free-photo/attractive-casual-blond-girl-hat-dreamily-looking-away-while-walking-with-classic-bicycle-city-street_574295-4130.jpg?t=st=1655225513~exp=1655226113~hmac=640b29b9bafbccedb065e1145761d9655a9284177a12a39b2f206e1a7dea80e8&w=740",
+    //     title: "COOL STREETWEARS"
+    // },
+    // {
+        // id: 4,
+        // img: "https://img.freepik.com/free-photo/stylish-tanned-girl-black-dress-red-neckerchief-posing-near-iron-lamppost_197531-3245.jpg?t=st=1655225748~exp=1655226348~hmac=9993addfa5baf1444e9aef1db5fcabed82987cd6271498ea6724421ecb7b17e2&w=740",
+        // title: "STYLISH DRESSES"
+    // },
 ]
