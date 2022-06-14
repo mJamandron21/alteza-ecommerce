@@ -50,7 +50,7 @@ const Container = styled.div`
     position: relative;
     overflow: hidden;
     border-radius: 50px;
-    margin-left: 30px;
+    margin-left: 33px;
 `;
 
 const Arrow = styled.div`
