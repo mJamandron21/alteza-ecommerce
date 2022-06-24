@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { popularProducts } from "../data";
-import Product from "./ProductList";
+import Product from "./ProductItem";
 
 
 const Products = () => {
