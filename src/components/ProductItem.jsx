@@ -35,6 +35,7 @@ import styled from "styled-components";
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
     z-index: 3;
     display: flex;
     align-items: center;
@@ -51,7 +52,8 @@ import styled from "styled-components";
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5fbfd;
+    background-color: #F7F7F7;
+    border-radius: 10%;
     position: relative;
     &:hover ${Info}{
       opacity: 1;

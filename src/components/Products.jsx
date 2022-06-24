@@ -17,7 +17,7 @@ const Products = () => {
 export default Products;
 
 const Container = styled.div`
-    padding: 20px;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
