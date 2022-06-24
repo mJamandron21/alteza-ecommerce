@@ -1,8 +1,7 @@
-import {
-    FavoriteBorderOutlined,
-    SearchOutlined,
-    ShoppingCartOutlined,
-  } from "@material-ui/icons";
+import React from "react";
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import styled from "styled-components";
   
   
@@ -13,13 +12,13 @@ import styled from "styled-components";
         <Image src={item.img} />
         <Info>
           <Icon>
-            <ShoppingCartOutlined />
+            <ShoppingCartOutlinedIcon />
           </Icon>
           <Icon>
-            <SearchOutlined />
+            <SearchOutlinedIcon />
           </Icon>
           <Icon>
-            <FavoriteBorderOutlined />
+            <FavoriteBorderOutlinedIcon />
           </Icon>
         </Info>
       </Container>
